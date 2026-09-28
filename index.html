@@ -67,6 +67,13 @@ section{padding:4.2rem 0}
 .svc-card h3{font-size:1.3rem}
 .svc-card .price{font-family:'Fraunces',serif;font-size:1.5rem;color:var(--terra);white-space:nowrap}
 .svc-card p{color:var(--muted);font-size:.95rem}
+.t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.t-card{border:1px solid var(--line);border-radius:var(--r);padding:1.8rem;background:#fff;display:flex;flex-direction:column;gap:.6rem}
+.t-card .stars{color:var(--amber);letter-spacing:.25em;font-size:.85rem}
+.t-card .quote{font-size:.95rem}
+.t-card .who{font-weight:700;font-size:.92rem;margin-top:.4rem}
+.t-card .role{color:var(--muted);font-size:.82rem}
+  
 .book{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
 .book .cal{margin:2rem auto 0;max-width:560px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
 .hub{background:var(--ink);color:var(--paper);border-radius:26px;padding:3rem;margin:0 0 1rem}
@@ -86,6 +93,7 @@ footer a{color:var(--terra);font-weight:700;text-decoration:none}
   .grid{grid-template-columns:repeat(2,1fr)}
   .videos{grid-template-columns:1fr}
   .svc{grid-template-columns:1fr}
+  .t-grid{grid-template-columns:1fr}
   .link-grid{grid-template-columns:1fr}
   .nav-links a:not(.btn){display:none}
 }
@@ -97,6 +105,7 @@ footer a{color:var(--terra);font-weight:700;text-decoration:none}
     <a class="brand" href="#">Ary<em>·</em>Solorzano <span style="font-size:.8rem;color:var(--muted);font-family:'Manrope'">/ Makeup</span></a>
     <nav class="nav-links">
       <a href="#gallery" data-en="Gallery" data-es="Galería">Gallery</a>
+      <a href="#testimonials" data-en="Reviews" data-es="Opiniones">Reviews</a>
       <a href="#services" data-en="Services" data-es="Servicios">Services</a>
       <a href="#book" data-en="Book" data-es="Reservar">Book</a>
       <a href="#links" data-en="Links" data-es="Enlaces">Links</a>
@@ -154,6 +163,32 @@ footer a{color:var(--terra);font-weight:700;text-decoration:none}
   </div>
 </section>
 
+<section class="wrap" id="testimonials">
+  <div class="sec-head">
+    <div class="kicker" data-en="Testimonials" data-es="Testimonios">Testimonials</div>
+    <h2 data-en="Words from my clients" data-es="Lo que dicen mis clientas">Words from my clients</h2>
+  </div>
+  <div class="t-grid">
+    <div class="t-card">
+      <div class="stars">★★★★★</div>
+      <p class="quote" data-en="I cried happy tears when I saw myself in the mirror. My makeup survived the whole wedding, the hugs, the dancing, everything. I have never felt more beautiful in my life." data-es="Lloré de la emoción cuando me vi en el espejo. Mi maquillaje aguantó toda la boda, los abrazos, el baile, todo. Nunca me había sentido tan hermosa en mi vida.">I cried happy tears when I saw myself in the mirror. My makeup survived the whole wedding, the hugs, the dancing, everything. I have never felt more beautiful in my life.</p>
+      <p class="who">Daniela R.</p>
+      <p class="role" data-en="Bride" data-es="Novia">Bride</p>
+    </div>
+    <div class="t-card">
+      <div class="stars">★★★★★</div>
+      <p class="quote" data-en="I showed Ary one single photo and she understood exactly what I wanted. My skin looked flawless in person and in every picture. Worth every penny." data-es="Le mostré a Ary una sola foto y entendió exactamente lo que yo quería. Mi piel se veía perfecta en persona y en cada foto. Valió cada centavo.">I showed Ary one single photo and she understood exactly what I wanted. My skin looked flawless in person and in every picture. Worth every penny.</p>
+      <p class="who">Jessica M.</p>
+      <p class="role" data-en="Quinceañera mom" data-es="Mamá de quinceañera">Quinceañera mom</p>
+    </div>
+    <div class="t-card">
+      <div class="stars">★★★★★</div>
+      <p class="quote" data-en="I am extremely picky with makeup and she exceeded all my expectations. Punctual, professional and so kind. I would not trust my face to anyone else." data-es="Soy muy exigente con el maquillaje y ella superó todas mis expectativas. Puntual, profesional y muy amable. No confiaría mi rostro a nadie más.">I am extremely picky with makeup and she exceeded all my expectations. Punctual, professional and so kind. I would not trust my face to anyone else.</p>
+      <p class="who">Carolina T.</p>
+      <p class="role" data-en="Photoshoot client" data-es="Clienta de sesión de fotos">Photoshoot client</p>
+    </div>
+  </div>
+</section>
 <section class="wrap" id="services">
   <div class="sec-head">
     <div class="kicker" data-en="Services & pricing" data-es="Servicios y precios">Services & pricing</div>
